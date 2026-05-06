@@ -23,6 +23,23 @@ botoes.forEach(itemBotoes => {
 // Atualizando o data-contexto
     html.dataset.contexto = contexto
     
+// Atualizando as imagens
+    banner.src = `/04/img/${contexto}.png`
 
+    switch(contexto){
+        case 'foco':
+            titulos.innerHTML = 
+            'Otimize sua produtividade, <br> <strong class="app__title-strong">mergulhe no que importa.</strong>'
+            break;
+        case 'descanso-curto' :
+            titulos.innerHTML = 'Simplifique o caminho, <br> <strong class="app__title-strong">avance com eficiência.</strong>'
+            break;
+        case 'descanso-longo' :
+            titulos.innerHTML = 'Otimize sua produtividade, <br> <strong class="app__title-strong">Faça uma pausa longa!</strong>'
+            break;
+
+        default:
+            titulos.innerHTML = 'Contexto não encontrado'
+    }
 
 }

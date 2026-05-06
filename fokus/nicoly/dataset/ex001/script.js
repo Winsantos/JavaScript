@@ -1,0 +1,1 @@
+const dataPerido = document.getElementById('dataperiodo')
