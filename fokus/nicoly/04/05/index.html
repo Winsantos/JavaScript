@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!--Passando JavaScript-->
-    <script src="script.js" defer></script>
+    <script src="script/script.js" type="module" defer></script>
 </head>
 
 <body>
@@ -49,6 +49,10 @@
                         <button data-contexto="descanso-longo" class="app__card-button">Descanso longo</button>
                     </li>
                 </ul>
+
+                <!--
+                    Div para manipulação de visualização timer
+                -->
                 <div id="timer" class="app__card-timer"></div>
                 <ul class="app__card-list">
                     <li class="app__card-list-item">
@@ -65,8 +69,13 @@
                 </ul>
                 <div class="app__card-primary-button-wrapper">
                     <button id="start-pause" class="app__card-primary-button">
+                        <!-- <img class="app__card-primary-butto-icon" src="../img/pause.png" alt=""> -->
                         <img class="app__card-primary-butto-icon" src="../img/play_arrow.png" alt="">
-                        <span>Começar</span>
+                        <span>Iniciar</span>
+                    </button>
+                    <button id="start-pause" class="app__card-primary-button">
+                        <span>Resetar</span>
+
                     </button>
                 </div>
             </div>
@@ -79,6 +88,14 @@
         </footer>
     </main>
 
+    <!-- Modal -->
+     <div class="modal">
+        <div class="modal__conteudo">
+            <h1>Você pausou o timer</h1>
+            <button>Sair</button>
+
+        </div>
+     </div>
 </body>
 
 </html>
