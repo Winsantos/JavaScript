@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de agendamento e registro de chaves</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Registro de Chaves - LogiTech</h1>
+            <form id="registro">
+
+                    <div class="campo">
+                        <label for="setor">Setor:</label>
+                        <input type="text" id="setor" placeholder="Ex: Financeiro" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="sala">Sala:</label>
+                        <input type="text" id="sala" placeholder="Ex: Auditório" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="responsavel">Responsável:</label>
+                        <input type="text" id="responsavel" placeholder="Nome" required>
+                    </div>
+               
+                <div class="turnos">
+                    <label>Turno</label>
+                    
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="turno" value="Manhã" required> Manhã
+                        </label>
+
+                        <label>
+                            <input type="radio" name="turno" value="Tarde" required> Tarde
+                        </label>
+
+                        <label>
+                            <input type="radio" name="turno" value="Noite" required> Noite
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="retirada">Hora de Retirada</label>
+                    <input type="time" id="retirada" required>
+                </div>
+
+                <div class="campo">
+                    <label for="entrega">Hora de Entrega</label>
+                    <input type="time" id="entrega" required>
+                </div>
+
+            <button type="submit">Cadastrar</button>
+
+            </form>
+
+            <h2>Registro</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Setor</th>
+                        <th>Sala</th>
+                        <th>Responsável</th>
+                        <th>Turno</th>
+                        <th>Retirada</tr>
+                        <th>Entrega</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaRegistros"></tbody>
+            </table>
+    </div>
+
+</body>
+</html> 
