@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de agendamento e registro de chaves</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-       <div class="logo">
-        <i class="bi bi-router"></i>
-         <h1>Sistema de Registro de Chaves - LogiTech</h1>
-       </div>
-            <form id="listaRegistros">
+        <h1>Sistema de Registro de Chaves - LogiTech</h1>
+            <form id="registro">
 
                     <div class="campo">
                         <label for="setor">Setor:</label>
@@ -59,12 +55,11 @@
                     <input type="time" id="entrega" required>
                 </div>
 
-            <button><i class="bi bi-cloud-upload"></i> Cadastrar</button>
+            <button type="submit">Cadastrar</button>
 
             </form>
 
             <h2>Registro</h2>
-            <br>
 
             <table>
                 <thead>
@@ -73,7 +68,7 @@
                         <th>Sala</th>
                         <th>Responsável</th>
                         <th>Turno</th>
-                        <th>Retirada</tr>
+                        <th>Retirada</th>
                         <th>Entrega</th>
                         <th>Ações</th>
                     </tr>
